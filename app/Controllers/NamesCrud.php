@@ -9,7 +9,7 @@ class NamesCrud extends BaseController
     public function index(){
 		
 		 $NameModel = new NameModel();
-         $data['users'] = $NameModel->orderBy('id', 'DESC')->findAll();
+         	 $data['users'] = $NameModel->orderBy('id', 'DESC')->findAll();
 		 return view('namelist',$data);
         
     }
